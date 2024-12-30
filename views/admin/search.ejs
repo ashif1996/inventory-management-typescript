@@ -1,0 +1,68 @@
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Search</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+      <div class="btn-group me-2">
+        <a href="/admin/addProduct" class="btn btn-sm btn-outline-secondary">+ Add Product</a>
+      </div>
+    </div>
+</div>
+
+<div class="flash-messages mb-4">
+  <% if (successMessage && successMessage.length > 0) { %>
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <%= successMessage %>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+  <% } %>
+  <% if (errorMessage && errorMessage.length > 0) { %>
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <%= errorMessage %>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+  <% } %>
+</div>
+
+<div class="table-responsive">
+    <% if (products && products.length > 0) { %> <!-- Ensure 'users' is defined and has elements -->
+    
+      <table class="table table-striped table-sm">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Category</th>
+            <th scope="col">Available Stock</th>
+            <th scope="col">Price</th>
+            <th scope="col">Actions</th> <!-- Added a header for the actions column -->
+          </tr>
+        </thead>
+        <tbody>
+          <% products.forEach(element => { %> <!-- Changed 'user' to 'users' to match the array -->
+            <tr class="align-middle">
+              <td><%= element.name %></td>
+              <td><%= element.category %></td>
+              <td><%= element.stock %></td>
+              <td><%= element.price %></td>
+              <td>
+                <div class="d-flex flex-row justify-content-end gap-2">
+                    <a href="/admin/viewProduct/<%= element._id %>" class="btn btn-primary btn-small">
+                      <i class="bi bi-eye"></i>
+                    </a>
+                    <a href="/admin/editProduct/<%= element._id %>" class="btn btn-warning btn-small">
+                      <i class="bi bi-pencil"></i>
+                    </a>
+                    <form action="/admin/deleteProduct/<%= element._id %>" method="POST" class="d-inline"> <!-- Corrected the form action -->
+                      <button type="submit" class="btn btn-danger btn-small">
+                        <i class="bi bi-trash"></i> <!-- Changed icon to 'bi-trash' for delete -->
+                      </button>
+                    </form>
+                </div>
+              </td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+  
+    <% } else { %>
+      <h2>No results found.</h2>
+    <% } %>
+</div>

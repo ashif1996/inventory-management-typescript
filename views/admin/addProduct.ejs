@@ -1,0 +1,53 @@
+<div class="mt-5">
+    <div class="flash-messages mb-4">
+        <% if (successMessage && successMessage.length > 0) { %>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <%= successMessage %>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        <% } %>
+        <% if (errorMessage && errorMessage.length > 0) { %>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <%= errorMessage %>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        <% } %>
+    </div>
+</div>
+
+<div class="flex-center-container mt-5">
+    <div class="registration-container">
+        <form id="productForm" class="registration-form" action="/admin/addProduct" method="post">
+            <h2>Add a Product</h2>
+            <span class="text-center" style="font-size: 18px;">Fill in the product details below.</span>
+            
+            <!-- Product Name -->
+            <div>
+                <input name="name" type="text" placeholder="Product Name" id="productName" required>
+                <span id="nameError" class="error-message"></span> <!-- Error message -->
+            </div>
+            
+            <!-- Category -->
+            <div>
+                <input name="category" type="text" placeholder="Category" id="category" required>
+                <span id="categoryError" class="error-message"></span> <!-- Error message -->
+            </div>
+
+            <!-- Stock -->
+            <div>
+                <input name="stock" type="number" placeholder="Stock Quantity" id="stock" required min="0">
+                <span id="stockError" class="error-message"></span> <!-- Error message -->
+            </div>
+
+            <!-- Price -->
+            <div>
+                <input name="price" type="number" placeholder="Price" id="price" required min="0">
+                <span id="priceError" class="error-message"></span> <!-- Error message -->
+            </div>
+
+            <button type="submit">Add Product</button>
+        </form>
+    </div>    
+</div>
+
+<script src="/js/productValidation.js"></script>
