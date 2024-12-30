@@ -1,0 +1,39 @@
+{
+  "name": "inventory-management-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build:server": "tsc --project tsconfig.json",
+    "build:client": "tsc --project tsconfig.client.json",
+    "build": "npm run build:server && npm run build:client",
+    "start": "node dist/app.js",
+    "serve": "npm run build && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.18.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.9.2"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/connect-flash": "^0.0.40",
+    "@types/ejs": "^3.1.5",
+    "@types/express-ejs-layouts": "^2.5.4",
+    "@types/express-session": "^1.18.1",
+    "@types/method-override": "^3.0.0",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
