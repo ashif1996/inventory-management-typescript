@@ -1,0 +1,17 @@
+# environment variables
+.env
+
+# Ignore node_modules
+node_modules/
+
+# Ignore compiled JS files
+dist/
+
+# Ignore TypeScript declaration files
+*.d.ts
+
+# Ignore source maps
+*.js.map
+
+# Ignore compiled clientside JS files
+public/js/*.js
