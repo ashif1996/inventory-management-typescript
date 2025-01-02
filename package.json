@@ -1,7 +1,7 @@
 {
   "name": "inventory-management-typescript",
   "version": "1.0.0",
-  "description": "",
+  "description": "A TypeScript-based CRUD application for managing inventory. It includes features for adding, updating, fetching, and deleting inventory data, with asynchronous operations and API integration.",
   "main": "index.js",
   "type": "module",
   "scripts": {
