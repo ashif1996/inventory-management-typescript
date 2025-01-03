@@ -41,15 +41,15 @@
     <div class="row form-group mb-4">
         <div class="col">
             <label for="productName">Product Name</label>
-            <input type="text" class="form-control" id="productName" name="name" placeholder="Product Name" value="<%= product.name %>" required>
-            <span id="nameError" class="error-message"></span> <!-- Error message -->
+            <input type="text" class="form-control" id="productName" name="name" placeholder="Product Name" value="<%= product.name %>">
+            <span id="productNameError" class="error-message"></span> <!-- Error message -->
         </div>
     </div>
     
     <div class="row form-group mb-4">
         <div class="col">
             <label for="category">Category</label>
-            <input type="text" class="form-control" id="category" name="category" placeholder="Category" value="<%= product.category %>" required>
+            <input type="text" class="form-control" id="category" name="category" placeholder="Category" value="<%= product.category %>">
             <span id="categoryError" class="error-message"></span> <!-- Error message -->
         </div>
     </div>
@@ -57,7 +57,7 @@
     <div class="row form-group mb-4">
         <div class="col">
             <label for="stock">Stock Quantity</label>
-            <input type="number" class="form-control" id="stock" name="stock" placeholder="Stock Quantity" min="0" value="<%= product.stock %>" required>
+            <input type="number" class="form-control" id="stock" name="stock" placeholder="Stock Quantity" min="0" value="<%= product.stock %>">
             <span id="stockError" class="error-message"></span> <!-- Error message -->
         </div>
     </div>
@@ -65,7 +65,7 @@
     <div class="row form-group mb-4">
         <div class="col">
             <label for="price">Price</label>
-            <input type="number" class="form-control" id="price" name="price" placeholder="Price" min="0" value="<%= product.price %>" required>
+            <input type="number" class="form-control" id="price" name="price" placeholder="Price" min="0" value="<%= product.price %>">
             <span id="priceError" class="error-message"></span> <!-- Error message -->
         </div>
     </div>
