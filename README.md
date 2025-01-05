@@ -1,16 +1,12 @@
-# 🎓 Inventory Management System (TypeScript)
+# 🎓 Inventory Management System | TypeScript
 
 This **Inventory Management System** is a full-stack application built using **TypeScript**, providing functionalities for managing products and inventory. The project leverages modern TypeScript features along with Express.js for routing, validation, and authentication. It demonstrates real-world usage of **CRUD operations** and **authentication**.
-
----
 
 ## ✨ Features  
 - **Admin Panel**: Admin can manage products, including adding, editing, deleting, and viewing product details.  
 - **Authentication**: Admin login with session management.  
 - **Responsive Layout**: Custom admin interface layout for managing the inventory.  
 - **Error Handling**: Consistent error handling across the application.
-
----
 
 ## 🛠️ Tech Stack  
 - **TypeScript**: Strongly-typed JavaScript for better scalability and maintainability.  
@@ -19,8 +15,6 @@ This **Inventory Management System** is a full-stack application built using **T
 - **EJS**: Templating engine for rendering views with dynamic data.  
 - **bcryptjs**: For hashing and securing passwords.  
 - **Express-Session**: For handling user sessions and login states.
-
----
 
 ## 📂 Project Structure
 
@@ -77,8 +71,6 @@ inventory-management-typescript/
 └── README.md                 # Project documentation
 ```
 
----
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -128,15 +120,11 @@ inventory-management-typescript/
    npm run serve
    ```
 
----
-
 ## 🔍 Usage
 
 - **Admin Panel**: Admin can login, add, edit, delete, and view product records, and manage the dashboard.
 - **Authentication**: Admins can securely log in and maintain sessions.
 - **Error Handling**: Clear and structured error pages for invalid routes and other issues.
-
----
 
 ## 🧩 Learning Outcomes
 - Master **TypeScript fundamentals**.
@@ -144,12 +132,8 @@ inventory-management-typescript/
 - Learn how to structure a full-stack **Node.js** application with **Express**.
 - Apply **session management** and **authentication** in a real-world project.
 
----
-
 ## 📜 License
 This project is licensed under the **MIT License**.
-
----
 
 ## 🌟 Acknowledgements
 Special thanks to the **TypeScript** community and **Express** team for their documentation and open-source resources.
