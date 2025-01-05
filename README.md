@@ -1,4 +1,4 @@
-# 🎓 Inventory Management System | TypeScript
+# 📦 Inventory Management System | TypeScript
 
 This **Inventory Management System** is a full-stack application built using **TypeScript**, providing functionalities for managing products and inventory. The project leverages modern TypeScript features along with Express.js for routing, validation, and authentication. It demonstrates real-world usage of **CRUD operations** and **authentication**.
 
